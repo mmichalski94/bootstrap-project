@@ -8,6 +8,11 @@
     <!-- Bootstrap stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat:700|Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +21,7 @@
 
     <!-- Navigation menu START -->
 
-    <nav class="navbar navbar-default">
+    <nav id="main-nav" class="navbar navbar-fixed-top navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -33,11 +38,10 @@
             <div class="collapse navbar-collapse" id="menu-glowne">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="menu-item"><a href="#services">services</a></li>
+                    <li class="menu-item"><a href="#portfolio">portfolio</a></li>
+                    <li class="menu-item"><a href="#">team</a></li>
+                    <li class="menu-item"><a href="#">contact</a></li>
 
                 </ul>
             </div>
@@ -48,15 +52,80 @@
 
     <!-- Navigation menu STOP -->
 
-    <!-- Front page section -->
+    <!-- Header section START -->
 
-    <section id="frontPage">
-        <div class="container firstPage">
-            <p class="frontPage">Num libero temporte</p>
-            <h1>Lorem ipsum dolor</h1>
+    <header class="text-center">
+        <div class="headerContent">
+            <p class="sectionPar headerPar">Num libero tempore, cum soluta</p>
+            <h1 class="headerTitle">Lorem ipsum dolor</h1>
+            <a class="btn btn-default more" href="#services">view more</a>
+        </div>
+    </header>
+
+    <!-- Header section STOP -->
+
+    <!-- Services section START-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row sectionTitle text-center">
+                <h2>services</h2>
+                <p class="sectionPar">lorem lorem lorem ipsum dolor</p>
+            </div>
+            <div class="row text-center">
+                <div class="servicesContent col-sm-6 col-md-4">
+                    <i class="fa fa-briefcase fa-4x" aria-hidden="true"></i>
+                    <h3>Web Development</h3>
+                    <p>Quas aliquid delectus rerum placeat</p>
+                </div>
+                <div class="servicesContent col-sm-6 col-md-4">
+                    <i class="fa fa-cloud-download fa-4x" aria-hidden="true"></i>
+                    <h3>E-Commerce</h3>
+                    <p>Quas aliquid delectus rerum placeat</p>
+                </div>
+                <div class="servicesContent col-sm-6 col-md-4">
+                    <i class="fa fa-comment fa-4x" aria-hidden="true"></i>
+                    <h3>Web Design</h3>
+                    <p>Quas aliquid delectus rerum placeat</p>
+                </div>
+
+            </div>
 
         </div>
     </section>
+
+    <!-- Services section STOP-->
+
+    <!-- Portfolio section START-->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="sectionTitle">
+                <h2>portfolio</h2>
+                <p class="sectionPar">lorem lorem lorem ipsum dolor</p>
+            </div>
+            <div class="row text-center col-sm-6 col-md-4">
+                <div class="img-container">
+                    <div class="img-background" id="first-image">\
+                        <div class="imageMask">
+                            <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="imgBackground"><div class="imageBoxMask text-center">
+                            <i class="fa fa-plus fa-3x" aria-hidden="true"></i>-->
+            </div>
+        </div>
+
+        <div class="row text-center col-sm-6 col-md-4">
+            <div class="portfolioBox"></div>
+            <div class="portfolioBox"></div>
+            <div class="portfolioBox"></div>
+        </div>
+
+    </section>
+
+    <!-- Portfolio section STOP-->
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
