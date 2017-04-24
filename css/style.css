@@ -179,11 +179,27 @@ header .more:hover {
 #portfolio #first-image {
 	background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
 }
+#portfolio #second-image {
+	background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+#portfolio #third-image {
+	background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+#portfolio #fourth-image {
+	background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+#portfolio #fifth-image {
+	background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+#portfolio #sixth-image {
+	background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
 
 #portfolio .img-container {
 	width: 300px;
 	height: 300px;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 #portfolio .img-container .img-background {
@@ -191,11 +207,20 @@ header .more:hover {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
-	transition: all 0.5s;
+	transition: all 1s;
+    overflow: hidden;
 }
 #portfolio .img-container .img-background .imageMask{
-    background-color: #0ed8d6;
+    background-color: rgba(14, 216, 214, 0.6);
     height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+#portfolio .img-container .img-background .imageMask i{
+    line-height: 300px;
+    }
+#portfolio .img-container:hover .img-background .imageMask{
     opacity: 1;
 }
 #portfolio .img-container:hover .img-background {
