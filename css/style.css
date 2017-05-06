@@ -197,9 +197,9 @@ header .more:hover {
 
 
 #portfolio .img-container {
-	width: 300px;
 	height: 300px;
     overflow: hidden;
+    margin: 15px;
 }
 
 #portfolio .img-container .img-background {
